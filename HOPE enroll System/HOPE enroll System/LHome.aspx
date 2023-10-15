@@ -81,8 +81,8 @@
     <form id="form1" runat="server">
         <uc:Header runat="server" ID="Header1" />
 
-        <div class="dash">
-            <asp:HyperLink ID="HyperLink7" runat="server">HyperLink</asp:HyperLink></div>
+        <div>
+            <asp:HyperLink ID="HyperLink7" runat="server" CssClass="dash">HyperLink</asp:HyperLink></div>
         
          <div class="video-grid">
             <div class="vid-prev">
@@ -91,7 +91,7 @@
                   <p class="vid-title">
                     Special Education
                   </p>
-                    <asp:HyperLink ID="HyperLink1" runat="server" CssClass="vid-stat">Register</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink1" runat="server" CssClass="vid-stat" NavigateUrl="~/Registrationform.aspx">Register</asp:HyperLink>
                 </div>
               </div>
             </div>
@@ -104,7 +104,7 @@
                   <p class="vid-title">
                     Preschool
                   </p>
-                    <asp:HyperLink ID="HyperLink2" runat="server" CssClass="vid-stat">Register</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink2" runat="server" CssClass="vid-stat" NavigateUrl="~/Registrationform.aspx">Register</asp:HyperLink>
                 </div>
               </div>
             </div>
@@ -116,8 +116,8 @@
                 <div class="vid-info">
                   <p class="vid-title">
                     Elementary
-                  </p>
-                    <asp:HyperLink ID="HyperLink3" runat="server" CssClass="vid-stat">Register</asp:HyperLink>
+                  </p> 
+                    <asp:HyperLink ID="HyperLink3" runat="server" CssClass="vid-stat" NavigateUrl="~/Registrationform.aspx">Register</asp:HyperLink>
                 </div>
               </div>
             </div>
@@ -130,7 +130,7 @@
                   <p class="vid-title">
                     Junior Highschool
                   </p>
-                    <asp:HyperLink ID="HyperLink4" runat="server" CssClass="vid-stat">Register</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink4" runat="server" CssClass="vid-stat" NavigateUrl="~/Registrationform.aspx">Register</asp:HyperLink>
                 </div>
               </div>
             </div>
@@ -143,7 +143,7 @@
                   <p class="vid-title">
                     Senior Highschool
                   </p>
-                    <asp:HyperLink ID="HyperLink5" runat="server" CssClass="vid-stat">Register</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink5" runat="server" CssClass="vid-stat" NavigateUrl="~/Registrationform.aspx">Register</asp:HyperLink>
                 </div>
               </div>
             </div>
@@ -156,7 +156,7 @@
                   <p class="vid-title">
                     Home Schooling
                   </p>
-                    <asp:HyperLink ID="HyperLink6" runat="server" CssClass="vid-stat">Register</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink6" runat="server" CssClass="vid-stat" NavigateUrl="~/Registrationform.aspx">Register</asp:HyperLink>
                 </div>
               </div>
             </div>
