@@ -1,12 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DashHome.aspx.cs" Inherits="HOPE_enroll_System.DashHome" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Dashboard.aspx.cs" Inherits="HOPE_enroll_System.Dashboard" %>
 <%@ Register Src="~/homeheader.ascx" TagName="Header" TagPrefix="uc" %>
-
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-     <style>
+    <style>
         body {
             font-family: Arial, sans-serif;
         }
@@ -38,7 +37,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <uc:Header runat="server" ID="Header1" />
+         <uc:Header runat="server" ID="Header1" />
         <div>
             <div class="sidebar">
         <a href="/DashHome.aspx">Home</a>
