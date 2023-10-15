@@ -43,7 +43,7 @@
               cursor:pointer;
               height:30px;
               width:50px;
-              background-color:red;
+              background-color:#E22529;
               font-size: 12px;
               color: white;
               text-decoration:none;
@@ -66,12 +66,23 @@
             }
 
             .dash{
+                margin:1.5%;
                 display:inline-flex;
                 justify-content:flex-start;
-                background-color:palevioletred;
+                background-color:#E22529;
+                border:none;
                 height:30px;
                 width:90px;
                 border-radius:15px;
+                color:white;
+                cursor:pointer;
+                transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
+            }
+
+            .dash:hover{
+                background-color:white;
+                color: #E22529;
+                border:2px solid #E22529;
             }
 
 </style>
@@ -82,7 +93,8 @@
         <uc:Header runat="server" ID="Header1" />
 
         <div>
-            <asp:HyperLink ID="HyperLink7" runat="server" CssClass="dash">HyperLink</asp:HyperLink></div>
+            <asp:Button ID="Button1" runat="server" Text="Dashboard" OnClick="Button1_Click" CssClass="dash" />
+        </div>
         
          <div class="video-grid">
             <div class="vid-prev">
