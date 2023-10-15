@@ -1,0 +1,79 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Landingpg.aspx.cs" Inherits="HOPE_enroll_System.Landingpg" %>
+<%@ Register Src="~/headerlandpage.ascx" TagName="Header" TagPrefix="uc" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        body{
+            margin:0;
+            font-family:Arial;
+        }
+        .auto-style1 {
+            width: 161px;
+            height: 38px;
+        }
+
+        .container{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .cont {
+                    display: flex;
+                    flex-direction:column;
+                    align-items: center;
+                    width: 80%; 
+                    max-width: 1200px; 
+
+               }
+        .about_img{
+            vertical-align:top;
+            padding-left:10px;
+            height:20px;
+            width:20px;
+            object-fit:fill;
+        }
+
+        .about{
+            cursor:pointer;
+            background-color:yellow;
+            padding:10px;
+        }
+
+        .hypr{
+            text-decoration:none;
+        }
+
+        .auto-style2 {
+            width: 512px;
+            height: 512px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <uc:Header runat="server" ID="Header1" />
+
+        <div class="container">
+        <div class="cont">
+        <div>
+            <h1>Welcome to Hope </h1>
+            <h1>Integrated School</h1>
+            <p>We are SMART. We are KIND. We are His</p>
+        </div>
+        <div class="about">
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/About.aspx" CssClass="hypr">
+             About<img alt="arrow" class="about_img" src="Images/rightarrowinsideacircle_122006.png" />
+            </asp:HyperLink>
+        </div>
+        </div>
+        </div>
+
+    </form>
+</body>
+</html>
