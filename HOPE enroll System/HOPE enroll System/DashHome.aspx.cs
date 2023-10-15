@@ -7,16 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace HOPE_enroll_System
 {
-    public partial class Registrationform : System.Web.UI.Page
+    public partial class DashHome : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("DashHome.aspx");
         }
     }
 }

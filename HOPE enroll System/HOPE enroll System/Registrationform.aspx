@@ -26,7 +26,7 @@
             padding:0 15px 0 0;
         }
         .tab1{
-            
+            text-decoration:none;
             background-color:#0289CE;
             margin-right:15px;
             margin:0 0 0 10px;
@@ -37,7 +37,7 @@
         }
 
         .tab2{
-            
+            text-decoration:none;
             margin-right:15px;
             margin:0;
             padding:15px 15px 25px 15px;
@@ -94,7 +94,7 @@
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Registrationform.aspx">Personal Information</asp:HyperLink>
     </div>
     <div class="tab2">
-        <asp:HyperLink ID="HyperLink2" runat="server">Submit Documents</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/document.aspx">Submit Documents</asp:HyperLink>
     </div>
     <div class="registration">
         <p>REGISTRATION</p>

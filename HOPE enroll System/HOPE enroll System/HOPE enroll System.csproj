@@ -122,6 +122,8 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="DashHome.aspx" />
+    <Content Include="document.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="headerlandpage.ascx" />
@@ -220,6 +222,20 @@
     </Compile>
     <Compile Include="Contacts.aspx.designer.cs">
       <DependentUpon>Contacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashHome.aspx.cs">
+      <DependentUpon>DashHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashHome.aspx.designer.cs">
+      <DependentUpon>DashHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="document.aspx.cs">
+      <DependentUpon>document.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="document.aspx.designer.cs">
+      <DependentUpon>document.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

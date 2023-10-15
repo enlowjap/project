@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace HOPE_enroll_System
 {
-    public partial class Registrationform : System.Web.UI.Page
+    public partial class document : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
