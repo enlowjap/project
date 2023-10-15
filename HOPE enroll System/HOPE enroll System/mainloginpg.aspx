@@ -9,6 +9,8 @@
         body{
             margin:0;
             font-family:Arial;
+            background:url('Images/pic1.png');
+            background-size:cover;
         }
         h1{
             font-size:50px;
@@ -20,25 +22,28 @@
         .cont{
             margin:0;
             display:flex;
-            justify-content:flex-end;
+            justify-content:flex-start;
             align-items:center;
             flex-direction:row;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .loginfrm{
-            background-color:aqua;
-            padding:15px;
-            height:800px;
+
+            margin:0;
+            height:500px;
             width:500px;
             display:flex;
             flex-direction:column;
             justify-content:center;
         }
         .lgformseparation{
+            background-color:white;
             padding:10px;
             margin-bottom:15px;
             display:flex;
             flex-direction:column;
             align-items:center;
+            
         }
         .adssomething{
             background-color:antiquewhite;
@@ -48,7 +53,7 @@
             border:none;
             width:200px;
             height:25px;
-            background-color:palevioletred;
+            background-color:red;
             color:white;
         }
     </style>

@@ -124,6 +124,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Dashboard.aspx" />
     <Content Include="DashHome.aspx" />
+    <Content Include="Dashprofile.aspx" />
+    <Content Include="Dashreciept.aspx" />
     <Content Include="document.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -131,6 +133,13 @@
     <Content Include="homeheader.ascx" />
     <Content Include="Images\2815428.png" />
     <Content Include="Images\background1.jpg" />
+    <Content Include="Images\dashboard.png" />
+    <Content Include="Images\dhome.png" />
+    <Content Include="Images\dprofile.png" />
+    <Content Include="Images\pic1.png" />
+    <Content Include="Images\pic2.png" />
+    <Content Include="Images\pic3.png" />
+    <Content Include="Images\piclogn.png" />
     <Content Include="Images\rightarrowinsideacircle_122006.png" />
     <Content Include="Images\Screenshot 2023-10-09 032305.png" />
     <Content Include="Landingpg.aspx" />
@@ -237,6 +246,20 @@
     </Compile>
     <Compile Include="DashHome.aspx.designer.cs">
       <DependentUpon>DashHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashprofile.aspx.cs">
+      <DependentUpon>Dashprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashprofile.aspx.designer.cs">
+      <DependentUpon>Dashprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashreciept.aspx.cs">
+      <DependentUpon>Dashreciept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashreciept.aspx.designer.cs">
+      <DependentUpon>Dashreciept.aspx</DependentUpon>
     </Compile>
     <Compile Include="document.aspx.cs">
       <DependentUpon>document.aspx</DependentUpon>

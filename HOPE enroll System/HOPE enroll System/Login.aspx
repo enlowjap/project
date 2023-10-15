@@ -10,7 +10,10 @@
         body{
             margin:0;
             font-family:Arial;
-            
+            margin:0;
+            font-family:Arial;
+            background:url('Images/piclogn.png');
+            background-size:cover;
             
         }
         .auto-style1 {
@@ -21,9 +24,10 @@
             margin:0;
             display:flex;
             flex-direction:row;
+            justify-content:flex-end;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .loginfrm{
-            background-color:aqua;
             padding:15px;
             height:800px;
             width:500px;
@@ -69,7 +73,7 @@
                 <div class="lgformseparation">
                     <asp:Label ID="Label5" runat="server" Text="Gender"></asp:Label>
                     <asp:RadioButton ID="RadioButton1" runat="server" GroupName="gender" Text="Male" />
-                    <asp:RadioButton ID="RadioButton2" runat="server" GroupName="gender" Text="Femaale" />        
+                    <asp:RadioButton ID="RadioButton2" runat="server" GroupName="gender" Text="Female" />        
                 </div>
                  <div class="lgformseparation">
                     <asp:Button ID="Button1" runat="server" Text="Confirm" CssClass="bttnconfirm" OnClick="Button1_Click" />

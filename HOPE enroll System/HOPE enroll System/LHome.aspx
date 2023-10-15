@@ -8,6 +8,8 @@
     <style>
         body{
             font-family:Arial;
+            background:url('Images/pic3.png');
+            background-size:cover;
         }
         .video-grid{
               

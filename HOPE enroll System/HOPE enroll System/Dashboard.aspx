@@ -8,6 +8,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background:url('Images/dashboard.png');
+            background-size:cover;
         }
 
         .sidebar {
@@ -41,9 +43,9 @@
         <div>
             <div class="sidebar">
         <a href="/DashHome.aspx">Home</a>
-        <a href="#about">Dashboard</a>
-        <a href="#services">Student Profile</a>
-        <a href="#contact">School Receipt</a>
+        <a href="/Dashboard.aspx">Dashboard</a>
+        <a href="/Dashprofile.aspx">Student Profile</a>
+        <a href="/Dashreciept">School Receipt</a>
     </div>
     <div style="margin-left: 220px;">
         <h1>Main Content Goes Here</h1>

@@ -9,6 +9,8 @@
     <style>
         body{
             font-family:Arial;
+            background:url('Images/pic2.png');
+            background-size:cover;
         }
         .cont{
             margin:0;
