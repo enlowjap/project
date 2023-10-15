@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Landingpg.aspx.cs" Inherits="HOPE_enroll_System.Landingpg" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Landingpg.aspx.cs" Inherits="HOPE_enroll_System.Landingpg" %>
 <%@ Register Src="~/headerlandpage.ascx" TagName="Header" TagPrefix="uc" %>
 
 <!DOCTYPE html>
@@ -23,6 +23,16 @@
             justify-content: flex-end;
             align-items: center;
             height: 100vh;
+        }
+        h1 {
+            font-family:Helvetica;
+            font-weight:bolder;
+            font-size: 40px;
+            line-height: .5; 
+        }
+
+        p {
+            text-indent: 20px; /* You can adjust the value to increase or decrease the indent */
         }
 
         .cont {
@@ -64,8 +74,8 @@
         <div class="container">
         <div class="cont">
         <div>
-            <h1>Welcome to Hope </h1>
-            <h1>Integrated School</h1>
+            <h1>WELCOME TO HOPE</h1>
+            <h1>INTEGRATED SCHOOL</h1>
             <p>We are SMART. We are KIND. We are His</p>
         </div>
         <div class="about">
