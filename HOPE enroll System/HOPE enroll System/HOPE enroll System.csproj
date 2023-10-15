@@ -127,6 +127,7 @@
     <Content Include="headerlandpage.ascx" />
     <Content Include="homeheader.ascx" />
     <Content Include="Images\2815428.png" />
+    <Content Include="Images\background1.jpg" />
     <Content Include="Images\rightarrowinsideacircle_122006.png" />
     <Content Include="Images\Screenshot 2023-10-09 032305.png" />
     <Content Include="Landingpg.aspx" />

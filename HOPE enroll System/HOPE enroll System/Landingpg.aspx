@@ -10,6 +10,8 @@
         body{
             margin:0;
             font-family:Arial;
+            background:url('Images/background1.jpg');
+            background-size:cover;
         }
         .auto-style1 {
             width: 161px;
@@ -27,7 +29,7 @@
                     display: flex;
                     flex-direction:column;
                     align-items: center;
-                    width: 80%; 
+                    width: 50%; 
                     max-width: 1200px; 
 
                }
