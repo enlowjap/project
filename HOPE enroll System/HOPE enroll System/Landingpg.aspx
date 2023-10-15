@@ -10,6 +10,8 @@
         body{
             margin:0;
             font-family:Arial;
+            background:url('Images/background1.jpg');
+            background-size:cover;
         }
         .auto-style1 {
             width: 161px;
