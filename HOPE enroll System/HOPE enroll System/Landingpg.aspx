@@ -29,7 +29,7 @@
                     display: flex;
                     flex-direction:column;
                     align-items: center;
-                    width: 80%; 
+                    width: 50%; 
                     max-width: 1200px; 
 
                }
