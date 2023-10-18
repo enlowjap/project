@@ -25,21 +25,23 @@
             height: 100vh;
         }
         h1 {
-            font-family:Helvetica;
+            font-family:'Segoe UI';
             font-weight:bolder;
-            font-size: 40px;
+            font-size: 48px;
             line-height: .5; 
         }
 
         p {
-            text-indent: 20px; /* You can adjust the value to increase or decrease the indent */
+            text-indent: 80px;
+            font-family:'Times New Roman';
+            font-size: 20px;
         }
 
         .cont {
                     display: flex;
                     flex-direction:column;
                     align-items: center;
-                    width: 50%; 
+                    width: 47%; 
                     max-width: 1200px; 
 
                }
@@ -76,7 +78,7 @@
         <div>
             <h1>WELCOME TO HOPE</h1>
             <h1>INTEGRATED SCHOOL</h1>
-            <p>We are SMART. We are KIND. We are His</p>
+            <p>We are SMART. We are KIND. We are HIS.</p>
         </div>
         <div class="about">
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/About.aspx" CssClass="hypr">
