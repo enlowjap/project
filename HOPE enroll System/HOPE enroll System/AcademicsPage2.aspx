@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Contacts.aspx.cs" Inherits="HOPE_enroll_System.Contacts" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AcademicsPage2.aspx.cs" Inherits="HOPE_enroll_System.Contacts" %>
 <%@ Register Src="~/headerlandpage.ascx" TagName="Header" TagPrefix="uc" %>
 <!DOCTYPE html>
 
@@ -61,7 +61,7 @@
     height: 250px;
     margin: 10px;
     text-align: center;
-    font-size: 12px;
+    font-size: 13px;
     color:white;
     font-family: 'Lucida Console';
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -76,18 +76,10 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 .red {
-    background-color: #FCB711;
-}
-
-.blue {
-    background-color: #EF6699;
-}
-
-.green {
     background-color: #6460AA;
 }
 
-.yellow {
+.blue {
     background-color: #0089D0;
 }
 
@@ -129,18 +121,14 @@
             <p>Academics</p><br />
          <p2>Explore our Educational Program!</p2>
         <div class="container">
-    <div class="square red"><h1>Special Education</h1>HIS has had a vision for many years to provide Christian education for children with special needs. These students are tremendous blessings to the HIS community.</div>
-    <div class="square blue"><h1>Preschool</h1>(Nursery,Kinder 1,Kinder 2)<br /><br /><br />The HIS Preschool Program consists of children aged 3 to 5 years old. HIS offers a wonderful preschool program that is safe, fun, educational, and Biblically grounded.</div>
-    <div class="square green"><h1>Elementary</h1>Primary Level (Grades 1 to 3) and Intermediate Level (Grades 4 to 6)<br /><br /><br />HIS Elementary Program serves students in primary (Grades 1 to 3) and intermediate levels (Grades 4 to 6). HIS focuses on a passion for students, education, and Christ.</div>
-    <div class="square yellow"><h1>Junior Highschool</h1>HIS Junior High School Program is designed to help Grades 7 to 10 students make a smooth transition into the rigorous academic programs of high school. </div>
+    <div class="square red"><h1>Senior Highschool</h1>HIS Senior High School Program offers Humanities and Social Sciences (HUMSS) and Sciences, Technology, Engineering and Mathematics (STEM).</div>
+    <div class="square blue"><h1>Home <br />Schooling</h1>Aside from online classes, HIS community can also choose to enroll in homeschooling. HIS offered Home Education Program for families who wish to homeschool their children.</div>
 </div>
-    <div class="arrow-buttons">
-  <button class="prev-button">&lt; Back </button>
-    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/AcademicsPage2.aspx" CssClass="hypr">
-        <span class="next-button">Next &gt; </span>
-    </asp:HyperLink>
+       <div class="arrow-buttons">
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Academics.aspx" CssClass="prev-button">
+        &lt; Back </asp:HyperLink> 
 </div>
- 
+   
     </form>
 </body>
 </html>
