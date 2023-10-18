@@ -20,35 +20,44 @@
      height: 100vh;
  }
 
+
 .h1-small {
-    font-family: Arial;
+    font-family: 'Times New Roman';
     color: #E81F25;
     font-weight:normal;
-    font-size: 40px;
+    font-size: 80px;
     line-height: 0.1;
+
 }
 
 .h1-large {
-    font-family: Helvetica;
+    font-family: 'Segoe UI';
     color: #E81F25;
-    font-size: 130px; /* Adjust the font size as desired */
-    line-height: 0.1; /* Adjust the line height as desired */
+    font-size: 130px; 
+    line-height: 9px;
 }
 
   
   p {
-    font-size: 16px;
+    font-size: 20px;
+    font-family: 'Times New Roman';
     color: black;
-    line-height: 16px; /* You can adjust this value based on your preference */
+    text-align: center;
+    width: 90%;
+    margin: 0 auto; 
+    position: absolute;
+    top: 91%;
+    padding-left:5%;
+    transform: translateY(-50%);
+    line-height:25px;
+   
 }
-
  .cont {
              display: flex;
              flex-direction:column;
-             align-items: center;
-             width: 50%; 
+             align-items:center;
+             width: 20%; 
              max-width: 1200px;
-             padding-top: 10px
         }
  
 
@@ -63,10 +72,10 @@
         <div>
            <h1 class="h1-small">About</h1>
             <h1 class="h1-large">HIS</h1>
-            <p>Hope Integrated School is a non-stock, inclusive, Christian educational institution duly recognized by the Department of Education. The school was founded in 1999 through the Grace of God, under the leadership of Mrs. Teresita Suiza, with an initial name of TD&S Hope Christian Academy until the current name has been adopted by around 2015.</p>
             </div>     
         </div>
     </div>
+        <p>Hope Integrated School is a non-stock, inclusive, Christian educational institution duly recognized by the Department of Education. The school was founded in 1999 through the Grace of God, under the leadership of Mrs. Teresita Suiza, with an initial name of TD&S Hope Christian Academy until the current name has been adopted by around 2015.</p>
     </form>
 </body>
 </html>

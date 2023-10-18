@@ -24,7 +24,7 @@
 
             /* Style the logo */
             .logo img {
-                width: 300px; /* Set the width of the logo image */
+                width: 200px; /* Set the width of the logo image */
               
         }
 
@@ -76,7 +76,7 @@
 <div class="Lmenubar">
             <div class="logo">
             <asp:HyperLink ID="hypImageLink" runat="server" NavigateUrl="Landingpg.aspx">
-            <img alt="HOPE LOGO" class="auto-style1" src="Images/Screenshot%202023-10-09%20032305.png" />
+            <img alt="HOPE LOGO" class="auto-style1" src="Images/LOGO.png" />
             </asp:HyperLink>
             </div>
             <div class="Lheader-seperation">
