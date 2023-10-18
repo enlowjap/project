@@ -82,7 +82,7 @@
             <div class="Lheader-seperation">
             <asp:Button ID="About" runat="server" CssClass="Lbuttons" OnClick="Button1_Click" Text="About" />
             <asp:Button ID="Acad" runat="server" CssClass="Lbuttons" OnClick="clickeve_acad" Text="Academics" />
-            <asp:Button ID="Contact" runat="server" CssClass="Lbuttons" OnClick="Button3_Click" Text="Contact" />
+            <asp:Button ID="Contact" runat="server" CssClass="Lbuttons" OnClick="Button3_Click" Text="Contacts" />
             <asp:Button ID="Login" runat="server" CssClass="Lbuttons" OnClick="Button4_Click" Text="Login" />
             <asp:Button ID="Enroll" runat="server" CssClass="Enroll" OnClick="Button5_Click" Text="Enroll" />
             </div>

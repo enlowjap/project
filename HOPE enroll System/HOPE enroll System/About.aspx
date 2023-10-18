@@ -67,7 +67,7 @@
 <body>
     <form id="form1" runat="server">
         <uc:Header runat="server" ID="Header1" />
-         <div class="container">
+        <div class="container">
         <div class="cont">
         <div>
            <h1 class="h1-small">About</h1>

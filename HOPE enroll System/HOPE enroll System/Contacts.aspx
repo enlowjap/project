@@ -9,42 +9,44 @@
   body{
      
       font-family:Arial;
-      background:url('Images/background5.jpg');
+      background:url('Images/contactspic.png');
       background-size:cover;
   }
-       
+     
  .container{
      display: flex;
      justify-content: flex-end;
      align-items: center;
      height: 20vh;
  }
- .cont {
+.cont {
             display: flex;
             flex-direction:column;
-            align-items: center;
-            width: 80%; 
+            align-items:center;
+            width: 55%; 
             max-width: 1200px;
-            padding-top: 10px
        }
- h1 {
-    font-family: Helvetica;
+ 
+.h1-large {
+    font-family: 'Franklin Gothic';
+    font-weight:bolder;
     color: #E81F25;
-    font-size: 89px; /* Adjust the font size as desired */
-    line-height: 0.1; /* Adjust the line height as desired */
+    font-size: 100px; 
 }
+
+
       </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <uc:Header runat="server" ID="Header1" />
          <div class="container">
-            <div class="cont">
-                <div>
-                        <h1>CONTACTS</h1>
-        </div> 
-           </div>
+             <div class="cont">
+             <div>
+               <h1 class="h1-large">CONTACT US</h1>
+                 </div>
               </div>
+         </div>
     </form>
 </body>
 </html>
