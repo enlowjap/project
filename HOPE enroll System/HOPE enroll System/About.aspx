@@ -37,7 +37,7 @@
 
   
   p {
-    font-size: 13px;
+    font-size: 16px;
     color: black;
     line-height: 16px; /* You can adjust this value based on your preference */
 }
