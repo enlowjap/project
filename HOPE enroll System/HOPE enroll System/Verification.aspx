@@ -96,13 +96,25 @@ p {
             <input type="text" class="code-input" maxlength="1">
             <input type="text" class="code-input" maxlength="1">
         </div>
-        <div class="buttons">
-            <button class="back-button">Back</button>
-            <button class="verify-button">Verify</button>
-            <%--kapag na confirm or na verify ang code pupunta sa next page na verificationpage2--%>
-        </div>
-    </div>
-    </form>
-    
+    <button class="back-button">Back</button>
+<button class="verify-button" id="verifyButton">Verify</button>
+<%--kapag na confirm or na verify ang code pupunta sa next page na verificationpage2--%>
+
+<script type="text/javascript">
+    document.getElementById("verifyButton").addEventListener("click", function () {
+        // Display a confirmation dialog (optional)
+        var confirmAction = confirm('Are you sure you want to verify?');
+        if (confirmAction) {
+            // User clicked "OK", redirect to verificationpage2.aspx
+            window.location.href = 'VerificationPage2.aspx';
+        } else {
+            // User clicked "Cancel", do nothing or provide feedback to the user
+            alert('Verification canceled.'); // Display a message indicating cancellation
+        }
+    });
+</script>
+
+       </div>
+    </form>   
 </body>
 </html>

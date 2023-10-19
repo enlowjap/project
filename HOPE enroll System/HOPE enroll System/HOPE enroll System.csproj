@@ -147,6 +147,7 @@
     <Content Include="Images\rightarrowinsideacircle_122006.png" />
     <Content Include="Images\Screenshot 2023-10-09 032305.png" />
     <Content Include="Images\verificationpic.png" />
+    <Content Include="Images\welcomepic.png" />
     <Content Include="Landingpg.aspx" />
     <Content Include="LHome.aspx" />
     <Content Include="Login.aspx" />
@@ -208,6 +209,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="WelcomePage.aspx" />
     <Content Include="VerificationPage2.aspx" />
     <Content Include="Verification.aspx" />
     <Content Include="ViewSwitcher.ascx" />
@@ -347,6 +349,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomePage.aspx.cs">
+      <DependentUpon>WelcomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WelcomePage.aspx.designer.cs">
+      <DependentUpon>WelcomePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="VerificationPage2.aspx.cs">
       <DependentUpon>VerificationPage2.aspx</DependentUpon>

@@ -113,7 +113,7 @@
                 // User clicked "YES", proceed with login logic here
                 // For example, submit the form or perform AJAX request
                 alert('Logging in...'); // Display a message indicating logging in
-                window.location.href = 'DashHome.aspx';
+                window.location.href = 'WelcomePage.aspx';
             } else {
                 // User clicked "NO", do nothing or provide feedback to the user
                 alert('Login canceled.'); // Display a message indicating login was canceled

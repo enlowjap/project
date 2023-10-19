@@ -109,7 +109,7 @@
             </div>
             <div class="form-group">
                 <label for="gender">GENDER</label>
-                <select id="gender" name="gender" required>
+                <select id="gender" name="gender" required> 
                     <option value="male">MALE</option>
                     <option value="female">FEMALE</option>
                     <option value="other">OTHER</option>
@@ -120,23 +120,25 @@
     <button type="submit" id="confirmButton">Confirm</button>
 <%--dapat pag na submit mapupunta sa verification page--%>
 </div>
-      </div>
-         <script type="text/javascript">
-             document.getElementById("confirmButton").addEventListener("click", function () {
-                 // Display a confirmation dialog
-                 var confirmAction = confirm('Are you sure you want to confirm?');
+        
+<script type="text/javascript">
+    document.getElementById("confirmButton").addEventListener("click", function () {
 
-                 if (confirmAction) {
-                     // User clicked "OK", proceed with the confirmation action here
-                     alert('Confirmed!');
-                     window.location.href = 'Verification.aspx';
-                 } else {
-                     // User clicked "Cancel", do nothing or provide feedback to the user
-                     alert('Confirmation canceled.'); // Display a message indicating cancellation
-                 }
-             });
+        // Display a confirmation dialog
+        var confirmAction = confirm('Are you sure you want to confirm?');
 
-         </script>
+        if (confirmAction) {
+            // User clicked "OK", redirect to another page
+            window.location.href = 'Verification.aspx';
+        } else {
+            // User clicked "Cancel", do nothing or provide feedback to the user
+            alert('Confirmation canceled.'); // Display a message indicating cancellation
+        }
+    });
+</script>
+ </div>
+
+
     </form>
 </body>
 </html>
