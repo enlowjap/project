@@ -128,13 +128,14 @@
 
                  if (confirmAction) {
                      // User clicked "OK", proceed with the confirmation action here
-                     alert('Confirmed!'); // Display a message indicating confirmation
-                     // Add logic to handle the confirmation action
+                     alert('Confirmed!');
+                     window.location.href = 'Verification.aspx';
                  } else {
                      // User clicked "Cancel", do nothing or provide feedback to the user
                      alert('Confirmation canceled.'); // Display a message indicating cancellation
                  }
              });
+
          </script>
     </form>
 </body>
