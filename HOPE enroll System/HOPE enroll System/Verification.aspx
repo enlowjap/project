@@ -100,8 +100,10 @@ p {
 <button class="verify-button" id="verifyButton">Verify</button>
 <%--kapag na confirm or na verify ang code pupunta sa next page na verificationpage2--%>
 
-<script type="text/javascript">
+<script>
+
     document.getElementById("verifyButton").addEventListener("click", function () {
+
         // Display a confirmation dialog (optional)
         var confirmAction = confirm('Are you sure you want to verify?');
         if (confirmAction) {
