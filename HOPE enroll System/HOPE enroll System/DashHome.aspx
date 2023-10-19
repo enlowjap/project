@@ -48,10 +48,6 @@
         <a href="/Dashprofile.aspx">Student Profile</a>
         <a href="/Dashreciept">School Receipt</a>
     </div>
-    <div style="margin-left: 220px;">
-        <h1>Main Content Goes Here</h1>
-        <!-- Rest of your content -->
-    </div>
         </div>
     </form>
 </body>

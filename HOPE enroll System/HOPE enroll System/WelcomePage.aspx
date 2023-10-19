@@ -49,7 +49,7 @@
             // Assuming 'verified' is a variable that determines if the user is verified or not
             const verified = true;
             if (verified) {
-                window.location.href = 'DashHome.aspx';
+                window.location.href = 'LHome.aspx';
             } else {
                 window.location.href = 'Login.aspx';
             }
