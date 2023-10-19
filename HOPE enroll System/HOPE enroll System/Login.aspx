@@ -10,76 +10,119 @@
         body{
             margin:0;
             font-family:Arial;
-            background:url('Images/LogInpic.png');
+            background:url('Images/Loginpic2.png');
             background-size:cover;
         }
-        h1{
-            font-size:50px;
-        }
-        .auto-style1 {
-            width: 161px;
-            height: 38px;
-        }
-        .cont{
-            margin:0;
-            display:flex;
-            justify-content:flex-start;
-            align-items:center;
-            flex-direction:row;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .loginfrm{
 
-            margin:0;
-            height:500px;
-            width:500px;
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
-        }
-        .lgformseparation{
-            background-color:white;
-            padding:10px;
-            margin-bottom:15px;
-            display:flex;
-            flex-direction:column;
-            align-items:center;
+         .welcome-message {
+            max-width: 450px;
+            margin: 0 auto;
+            margin-left: 700px;
+            padding: 20px;  
             
-        }
-        .adssomething{
-            background-color:antiquewhite;
-        }
+}
 
-        .bttnconfirm{
-            border:none;
-            width:200px;
-            height:25px;
-            background-color:red;
-            color:white;
-        }
+.welcome-message h2 {
+    font-size:70px;
+    font-family: 'Franklin Gothic';
+    font-weight:bolder;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.welcome-message p {
+     background: #DFFAF1; 
+     border: 2px solid #079565; 
+    font-size: 16px;
+    color: #555555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+         
+
+          .login-form {
+            max-width: 450px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-left: 700px;
+}
+
+            .login-form input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+            .login-form button {
+    width: 100%;
+    padding: 10px;
+    background: #4caf50;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+            .login-form label {
+             display: block;
+             margin-bottom: 10px;
+             font-weight: bold;
+}
+            .login-form button:hover {
+            background: #45a049;
+}
+
     </style>
+  
+
 </head>
 <body>
     <form id="form1" runat="server">
          <uc:Header runat="server" ID="Header1" />
-        <div class="cont">
-            <div class="loginfrm">
-                <div class="lgformseparation">
-                    <h1>Login Here</h1>
-                </div>
-                <div class="lgformseparation">
-                    <asp:Label ID="Label1" runat="server" Text="Email : "></asp:Label>
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-                </div>
-                <div class="lgformseparation">
-                    <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
-                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-                </div>
-                 <div class="lgformseparation">
-                    <asp:Button ID="Button1" runat="server" Text="Log In" CssClass="bttnconfirm" OnClick="Button1_Click" />
-                </div>
-            </div>
-            </div>
+        <div class="welcome-message">
+        <h2>Login Here</h2>
+        <p>Thanks for signing up! Your account has been created.</p>
+    </div>
+      <div class="login-form">
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Enter your username" />
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter your password" />
+    <div id="error-message" style="color: red; margin-bottom: 10px;"></div>
+    <button type="button" id="loginButton">Log in</button>
+</div>
+<script type="text/javascript">
+    document.getElementById("loginButton").addEventListener("click", function () {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var errorMessage = document.getElementById("error-message");
+
+        // Basic form validation
+        if (username === "" || password === "") {
+            errorMessage.textContent = "Invalid username or password. Please try again!";
+        } else {
+            // Clear any previous error messages
+            errorMessage.textContent = "";
+
+            // Display a confirmation dialog
+            var confirmLogin = confirm('Are you sure you want to log in?');
+
+            if (confirmLogin) {
+                // User clicked "YES", proceed with login logic here
+                // For example, submit the form or perform AJAX request
+                alert('Logging in...'); // Display a message indicating logging in
+            } else {
+                // User clicked "NO", do nothing or provide feedback to the user
+                alert('Login canceled.'); // Display a message indicating login was canceled
+            }
+        }
+    });
+</script>
+
+
+
     </form>
 </body>
 </html>

@@ -36,8 +36,8 @@
         }
 
         .reload-icon {
-         color: #007bff;
-         font-size: 30px;
+         color: #000000;
+         font-size: 50px;
          margin-top: 20px;
         }
 
@@ -54,7 +54,7 @@
         <p>You may now go to the next stage by logging into your account.</p>
         <p>Thank you!</p>
      <div class="reload-icon">
-        <i class="fas fa-sync-alt fa-spin fa-3x"></i>
+        <i class="fas fa-ellipsis-h fa-fade"></i>
     </div>
 </div>
     <script>

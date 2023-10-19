@@ -76,12 +76,7 @@
 }
 
     </style>
-    <script type="text/javascript">
-        function confirmButtonClick() {
-            var confirmed = confirm("Are you sure you want to confirm?");
-            return confirmed;
-        }
-    </script>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -122,10 +117,25 @@
             </div>
           <div class="form-group">
     <button type="button" class="cancel">Cancel</button>
-    <button type="submit" id="confirmButton" runat="server" onclientclick="return confirmButtonClick()">Confirm</button>
+    <button type="submit" id="confirmButton">Confirm</button>
 <%--dapat pag na submit mapupunta sa verification page--%>
 </div>
-        </div>
+      </div>
+         <script type="text/javascript">
+             document.getElementById("confirmButton").addEventListener("click", function () {
+                 // Display a confirmation dialog
+                 var confirmAction = confirm('Are you sure you want to confirm?');
+
+                 if (confirmAction) {
+                     // User clicked "OK", proceed with the confirmation action here
+                     alert('Confirmed!'); // Display a message indicating confirmation
+                     // Add logic to handle the confirmation action
+                 } else {
+                     // User clicked "Cancel", do nothing or provide feedback to the user
+                     alert('Confirmation canceled.'); // Display a message indicating cancellation
+                 }
+             });
+         </script>
     </form>
 </body>
 </html>
