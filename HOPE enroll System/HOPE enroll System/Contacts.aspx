@@ -4,26 +4,25 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-      <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Information</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
       
     <style type="text/css">
-  body{
+        
+        body{
      
       font-family:Arial;
       background:url('Images/contactspic.png');
       background-size:cover;
   }
      
- .container{
-     display: flex;
-     justify-content: flex-end;
-     align-items: center;
-     height: 20vh;
+        .container{
+         display: flex;
+         justify-content: flex-end;
+         align-items: center;
+         height: 20vh;
  }
-.cont {
+        .cont {
             display: flex;
             flex-direction:column;
             align-items:center;
@@ -31,13 +30,14 @@
             max-width: 1200px;
        }
  
-.h1-large {
-    font-family: 'Franklin Gothic';
-    font-weight:bolder;
-    color: #E81F25;
-    font-size: 100px; 
+        .h1-large {
+          font-family: 'Franklin Gothic';
+          font-weight:bolder;
+          color: #E81F25;
+          font-size: 100px; 
 }
- .contact-container {
+        
+        .contact-container {
             max-width: 1200px;
             margin: 0 auto;    
             margin-top: -30px;

@@ -139,8 +139,8 @@
     <Content Include="Images\dashboard.png" />
     <Content Include="Images\dhome.png" />
     <Content Include="Images\dprofile.png" />
+    <Content Include="Images\LogInpic.png" />
     <Content Include="Images\LOGO.png" />
-    <Content Include="Images\pic1.png" />
     <Content Include="Images\pic2.png" />
     <Content Include="Images\pic3.png" />
     <Content Include="Images\piclogn.png" />

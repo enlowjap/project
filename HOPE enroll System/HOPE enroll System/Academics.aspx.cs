@@ -11,7 +11,12 @@ namespace HOPE_enroll_System
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            // Check if it's a postback triggered by the "Next" button click
+            if (IsPostBack && Request["__EVENTTARGET"] == "btnNext")
+            {
+                // Redirect to the desired page
+                Response.Redirect("NextPage.aspx");
+            }
         }
     }
 }

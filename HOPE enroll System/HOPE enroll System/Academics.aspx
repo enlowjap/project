@@ -1,9 +1,11 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Contacts.aspx.cs" Inherits="HOPE_enroll_System.Contacts" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Academics.aspx.cs" Inherits="HOPE_enroll_System.Contacts" %>
 <%@ Register Src="~/headerlandpage.ascx" TagName="Header" TagPrefix="uc" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
       <style type="text/css">
   body{
@@ -135,10 +137,10 @@
     <div class="square yellow"><h1>Junior Highschool</h1>HIS Junior High School Program is designed to help Grades 7 to 10 students make a smooth transition into the rigorous academic programs of high school. </div>
 </div>
     <div class="arrow-buttons">
-  <button class="prev-button">&lt; Back </button>
-    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/AcademicsPage2.aspx" CssClass="hypr">
-        <span class="next-button">Next &gt; </span>
-    </asp:HyperLink>
+   <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/About.aspx" CssClass="prev-button">
+ &lt; Back </asp:HyperLink> 
+   <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/AcademicsPage2.aspx" CssClass="next-button">
+    Next &gt; </asp:HyperLink>
 </div>
  
     </form>

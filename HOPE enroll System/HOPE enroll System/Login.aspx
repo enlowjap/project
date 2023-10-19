@@ -6,15 +6,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-     <style type="text/css">
+    <style type="text/css">
         body{
             margin:0;
             font-family:Arial;
-            margin:0;
-            font-family:Arial;
-            background:url('Images/piclogn.png');
+            background:url('Images/LogInpic.png');
             background-size:cover;
-            
+        }
+        h1{
+            font-size:50px;
         }
         .auto-style1 {
             width: 161px;
@@ -23,67 +23,63 @@
         .cont{
             margin:0;
             display:flex;
+            justify-content:flex-start;
+            align-items:center;
             flex-direction:row;
-            justify-content:flex-end;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .loginfrm{
-            padding:15px;
-            height:800px;
+
+            margin:0;
+            height:500px;
             width:500px;
             display:flex;
             flex-direction:column;
             justify-content:center;
         }
         .lgformseparation{
-            margin:0;
+            background-color:white;
+            padding:10px;
+            margin-bottom:15px;
             display:flex;
-            flex-direction:row;
-            justify-content:space-between;
+            flex-direction:column;
+            align-items:center;
+            
         }
         .adssomething{
             background-color:antiquewhite;
+        }
+
+        .bttnconfirm{
+            border:none;
+            width:200px;
+            height:25px;
+            background-color:red;
+            color:white;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <uc:Header runat="server" ID="Header1" />
+         <uc:Header runat="server" ID="Header1" />
         <div class="cont">
             <div class="loginfrm">
                 <div class="lgformseparation">
-                    <h1> Create Acount</h1>
+                    <h1>Login Here</h1>
                 </div>
                 <div class="lgformseparation">
-                    <asp:Label ID="Label1" runat="server" Text="Name"></asp:Label>
+                    <asp:Label ID="Label1" runat="server" Text="Email : "></asp:Label>
                     <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                 </div>
                 <div class="lgformseparation">
-                    <asp:Label ID="Label2" runat="server" Text="Email"></asp:Label>
+                    <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
                     <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                 </div>
-                <div class="lgformseparation">
-                    <asp:Label ID="Label3" runat="server" Text="Password"></asp:Label>
-                    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-                </div>
-                <div class="lgformseparation">
-                    <asp:Label ID="Label4" runat="server" Text="Re-Type Password"></asp:Label>
-                    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
-                </div>
-                <div class="lgformseparation">
-                    <asp:Label ID="Label5" runat="server" Text="Gender"></asp:Label>
-                    <asp:RadioButton ID="RadioButton1" runat="server" GroupName="gender" Text="Male" />
-                    <asp:RadioButton ID="RadioButton2" runat="server" GroupName="gender" Text="Female" />        
-                </div>
                  <div class="lgformseparation">
-                    <asp:Button ID="Button1" runat="server" Text="Confirm" CssClass="bttnconfirm" OnClick="Button1_Click" />
+                    <asp:Button ID="Button1" runat="server" Text="Log In" CssClass="bttnconfirm" OnClick="Button1_Click" />
                 </div>
             </div>
-
-            <div class="adssomething">
-
             </div>
-        </div>
     </form>
 </body>
 </html>

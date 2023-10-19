@@ -11,12 +11,18 @@ namespace HOPE_enroll_System
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            confirmButton.ServerClick += ConfirmButton_Click;
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void ConfirmButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("LHome.aspx");
+            // Handle the button click event here
+            // Redirect to the other page
+            Response.Redirect("DashHome.aspx");
         }
+
+
     }
+
+}
 }

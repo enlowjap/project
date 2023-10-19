@@ -4,81 +4,127 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Create Account</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your external CSS file here -->
     <style type="text/css">
-        body{
-            margin:0;
-            font-family:Arial;
-            background:url('Images/pic1.png');
-            background-size:cover;
+        body {
+            background:url('Images/LogInpic.png');
+            background-size: cover;        
         }
-        h1{
-            font-size:50px;
-        }
-        .auto-style1 {
-            width: 161px;
-            height: 38px;
-        }
-        .cont{
-            margin:0;
-            display:flex;
-            justify-content:flex-start;
-            align-items:center;
-            flex-direction:row;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .loginfrm{
+         h1 {
+          font-family: 'Segoe UI';
+          color: #000000;
+          font-size: 50px; 
+          font-weight: bolder;
+          margin-bottom: 20px;
+           margin-top: 25px;
+          
+  }
+    
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            margin-left: 80px;
+            padding: 20px;  
 
-            margin:0;
-            height:500px;
-            width:500px;
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
         }
-        .lgformseparation{
-            background-color:white;
-            padding:10px;
-            margin-bottom:15px;
-            display:flex;
-            flex-direction:column;
-            align-items:center;
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .form-group label {
+            font-family: 'Times New Roman';
+            font-size: 16px;
+            display: inline-block;
+            width: 120px;
+
+        }
+        .form-group input[type="text"], 
+        .form-group input[type="email"], 
+        .form-group input[type="password"], 
+        .form-group select {
+            width: calc(100% - 120px);
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: inline-block;
             
         }
-        .adssomething{
-            background-color:antiquewhite;
+        .form-group button{
+            background-color: #053989;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .form-group button.cancel {
+            background-color: #ccc;
+            margin-right: 10px;
         }
 
-        .bttnconfirm{
-            border:none;
-            width:200px;
-            height:25px;
-            background-color:red;
-            color:white;
-        }
+        .form-group button[type="submit"]:hover {
+         background-color: #ff0000; 
+}
+
     </style>
+    <script type="text/javascript">
+        function confirmButtonClick() {
+            var confirmed = confirm("Are you sure you want to confirm?");
+            return confirmed;
+        }
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
-         <uc:Header runat="server" ID="Header1" />
-        <div class="cont">
-            <div class="loginfrm">
-                <div class="lgformseparation">
-                    <h1>Login Here</h1>
-                </div>
-                <div class="lgformseparation">
-                    <asp:Label ID="Label1" runat="server" Text="Email : "></asp:Label>
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-                </div>
-                <div class="lgformseparation">
-                    <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
-                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-                </div>
-                 <div class="lgformseparation">
-                    <asp:Button ID="Button1" runat="server" Text="Log In" CssClass="bttnconfirm" OnClick="Button1_Click" />
-                </div>
+        <uc:Header runat="server" ID="Header1" />
+        <div class="form-container">
+             <h1>Create Account</h1> 
+            <div class="form-group"> 
+                <label for="studentId">STUDENT ID</label>
+                <input type="text" id="studentId" name="studentId"  placeholder="00-000" required>
             </div>
+            <div class="form-group">
+                <label for="fullName">FULL NAME</label>
+                <input type="text" id="fullName" name="fullName"  placeholder="Jane Doe" required>
             </div>
+            <div class="form-group">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email"  placeholder="janedoe@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="username">USERNAME</label>
+                <input type="text" id="username" name="username"  placeholder="jane123" required>
+            </div>
+            <div class="form-group">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password"  placeholder="Type your password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">RE-TYPE PASSWORD</label>
+                <input type="password" id="confirmPassword" name="confirmPassword"  placeholder="Re-type your password" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">GENDER</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">MALE</option>
+                    <option value="female">FEMALE</option>
+                    <option value="other">OTHER</option>
+                </select>
+            </div>
+          <div class="form-group">
+    <button type="button" class="cancel">Cancel</button>
+    <button type="submit" id="confirmButton" runat="server" onclientclick="return confirmButtonClick()">Confirm</button>
+</div>
+        </div>
     </form>
 </body>
 </html>
