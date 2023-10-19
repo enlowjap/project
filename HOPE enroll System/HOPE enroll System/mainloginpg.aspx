@@ -123,6 +123,7 @@
           <div class="form-group">
     <button type="button" class="cancel">Cancel</button>
     <button type="submit" id="confirmButton" runat="server" onclientclick="return confirmButtonClick()">Confirm</button>
+<%--dapat pag na submit mapupunta sa verification page--%>
 </div>
         </div>
     </form>
