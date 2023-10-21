@@ -2,14 +2,9 @@
 
 <style type="text/css">
         body{
-            margin:0;
-            
-            
+            margin:0;  
         }
-        .auto-style1 {
-            width: 161px;
-            height: 38px;
-        }
+        
         /* Style the menu bar container */
         .Lmenubar {
             margin:0;
@@ -73,6 +68,7 @@
             }
     </style>
 
+<div>
 <div class="Lmenubar">
             <div class="logo">
             <asp:HyperLink ID="hypImageLink" runat="server" NavigateUrl="Landingpg.aspx">
@@ -87,3 +83,4 @@
             <asp:Button ID="Enroll" runat="server" CssClass="Enroll" OnClick="Button5_Click" Text="Enroll" />
             </div>
         </div>
+</div>

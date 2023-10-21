@@ -1,11 +1,12 @@
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Contacts.aspx.cs" Inherits="HOPE_enroll_System.Contacts" %>
 <%@ Register Src="~/headerlandpage.ascx" TagName="Header" TagPrefix="uc" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Contact Information</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
       
     <style type="text/css">
         
@@ -72,9 +73,11 @@
         }
       </style>
 </head>
+
 <body>
     <form id="form1" runat="server">
-        <uc:Header runat="server" ID="Header1" />
+        <div><uc:Header runat="server" ID="Header1" /></div>
+        
          <div class="container">
              <div class="cont">
              <div>
@@ -96,6 +99,7 @@
             <i class="icon fas fa-envelope"></i><span class="label">Email</span><br /><p class="info">info@hopeintegratedschool.edu.ph</p>
         </div>
     </div>
+    
     </form>
 </body>
 </html>

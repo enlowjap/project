@@ -31,12 +31,12 @@ namespace HOPE_enroll_System
 
         protected void Button4_Click(object sender, EventArgs e)
         {
-            Response.Redirect("mainloginpg.aspx");
+            Response.Redirect("Login.aspx");
         }
 
         protected void Button5_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Login.aspx");
+            Response.Redirect("mainloginpg.aspx");
         }
     }
 }
