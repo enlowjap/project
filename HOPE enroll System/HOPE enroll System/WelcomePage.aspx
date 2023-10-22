@@ -15,7 +15,7 @@
         }
 
                p {
-        font-size: 16px;
+        font-size: 20px;
          color: #666;
         margin-bottom: 10px;
         margin-top: 100px;
@@ -40,7 +40,7 @@
     <form id="form1" runat="server">
         <uc:Header runat="server" ID="Header1" />
         <div class="container">
-   <p>You may now go to the next stage by logging into your account.</p>
+   <p>Welcome to Hope Integrated School!</p>
      <div class="reload-icon">
         <i class="fas fa-ellipsis-h fa-fade"></i>
     </div></div>

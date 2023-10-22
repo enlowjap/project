@@ -126,27 +126,29 @@
             overflow: auto;
             background-color: rgba(0, 0, 0, 0.4);
         }
+         
 
         .modal-content {
-            background-color: #fefefe;
+            background-color: #F3F3F3;
             margin: 15% auto;
-            padding: 20px;
+            padding: 10px;  
             border: 1px solid #888;
-            width: 80%;
+            width: 45%;
             text-align: center;
             border-radius: 10px;
             box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
         }
 
         .modal-message {
-            font-size: 18px;
+            font-family: 'Times New Roman';
+            font-size: 20px;
             margin-bottom: 20px;
         }
 
         #okButton {
             margin-top: 20px;
             padding: 12px 24px;
-            background-color: #007bff;
+            background-color: red;
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -179,14 +181,29 @@
     <div class="square pink"><h1>Senior Highschool</h1>Grade 11 to Grade 12 (HUMSS And STEM)<br /><br /><br /><asp:HyperLink ID="HyperLink5" runat="server" CssClass="vid-stat" NavigateUrl="~/Registrationform.aspx">REGISTER NOW!</asp:HyperLink></div>
     <div class="square brown"><h1>Home <br />Schooling</h1>All Grade Levels<br /><br /><br /><br /><asp:HyperLink ID="HyperLink6" runat="server" CssClass="vid-stat" NavigateUrl="~/Registrationform.aspx">REGISTER NOW!</asp:HyperLink></div>
 </div></div>
-         <div class="modal" id="myModal">
-        <div class="modal-content">
-            <p>Choose a grade level you want to enroll</p>
-            <button id="okButton">OK</button>
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+              <img src="Images/piclogo.png" alt="Logo" style="max-width: 150px; height: auto;" />
+                <p>Choose a grade level you want to enroll</p>
+                <asp:Button ID="okButton" runat="server" Text="OK" OnClientClick="return closeModal();" />
+            </div>
         </div>
-    </div>
-  
+      
+        <script type="text/javascript">
+    function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+        return false; // Prevent ASP.NET postback
+    }
+
+    // Display the modal when the page loads
+    window.onload = function () {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "block";
+    };
+        </script>
     </form>
+       
    
 </body>
 </html>

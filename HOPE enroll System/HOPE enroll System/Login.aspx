@@ -104,7 +104,7 @@
 
             function submitForm() {
                 var username = document.getElementById('<%= txtUsername.ClientID %>').value;
-        var password = document.getElementById('<%= txtboxpassword.ClientID %>').value;
+                var password = document.getElementById('<%= txtboxpassword.ClientID %>').value;
 
                 // Basic validation: Check if username and password are not empty
                 if (username.trim() === '' || password.trim() === '') {
@@ -115,7 +115,7 @@
                 // Additional validation logic can be added here if needed
 
                 // Redirect to the home page
-                window.location.href = 'LHome.aspx';
+                window.location.href = 'WelcomePage.aspx';
                 return false;
             }
         </script>

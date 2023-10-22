@@ -137,19 +137,19 @@
     <Content Include="Images\backgroundacad.png" />
     <Content Include="Images\contactspic.png" />
     <Content Include="Images\dashboard.png" />
-    <Content Include="Images\dhome.png" />
     <Content Include="Images\dprofile.png" />
     <Content Include="Images\LogInpic.png" />
     <Content Include="Images\Loginpic2.png" />
     <Content Include="Images\LOGO.png" />
     <Content Include="Images\pic3.png" />
+    <Content Include="Images\picdhome.png" />
     <Content Include="Images\piclogn.png" />
+    <Content Include="Images\piclogo.png" />
     <Content Include="Images\rightarrowinsideacircle_122006.png" />
     <Content Include="Images\Screenshot 2023-10-09 032305.png" />
     <Content Include="Images\verificationpic.png" />
     <Content Include="Images\welcomepic.png" />
     <Content Include="Landingpg.aspx" />
-    <Content Include="LHome2.aspx" />
     <Content Include="LHome.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="mainloginpg.aspx" />
@@ -301,13 +301,6 @@
     </Compile>
     <Compile Include="Landingpg.aspx.designer.cs">
       <DependentUpon>Landingpg.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="LHome2.aspx.cs">
-      <DependentUpon>LHome2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LHome2.aspx.designer.cs">
-      <DependentUpon>LHome2.aspx</DependentUpon>
     </Compile>
     <Compile Include="LHome.aspx.cs">
       <DependentUpon>LHome.aspx</DependentUpon>
