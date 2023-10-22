@@ -141,29 +141,15 @@
             </div>
           <div class="form-group">
     
-    <asp:Button ID="Button1" runat="server" Text="Submit" CssClass="bttn" OnClick="Button1_Click" />
-
-<%--dapat pag na submit mapupunta sa verification page--%>
-</div>
-        
+   <asp:Button ID="Button1" runat="server" Text="Submit" CssClass="bttn" OnClientClick="return submitForm();" />
 <script type="text/javascript">
-    document.getElementById("confirmButton").addEventListener("click", function () {
-
-        // Display a confirmation dialog
-        var confirmAction = confirm('Are you sure you want to confirm?');
-
-        if (confirmAction) {
-            // User clicked "OK", redirect to another page
-            window.location.href = 'Verification.aspx';
-        } else {
-            // User clicked "Cancel", do nothing or provide feedback to the user
-            alert('Confirmation canceled.'); // Display a message indicating cancellation
-        }
-    });
+    function submitForm() {
+        window.location.href = 'Verification.aspx'; 
+        return false;
+    }
 </script>
+</div>
  </div>
-
-
     </form>
 </body>
 </html>

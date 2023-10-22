@@ -84,66 +84,43 @@
          <uc:Header runat="server" ID="Header1" />
         <div class="welcome-message">
         <h2>Login Here</h2>
-        <p>Thanks for signing up! Your account has been created.</p>
     </div>
     <div class="login-form">
     <label for="username">Username:</label>
 
-       <asp:TextBox ID="txtUsername" runat="server" CssClass="inputbox" onfocus="clearTextBox(this)">Enter your Username</asp:TextBox>
-
-    <script type="text/javascript">
-        function clearTextBox(textBox) {
-            if (textBox.value === textBox.defaultValue) {
-                textBox.value = '';
-            }
-        }
-    </script>
-
-    
+  <asp:TextBox ID="txtUsername" runat="server" CssClass="inputbox" onfocus="clearTextBox(this)"></asp:TextBox>
     <label for="password">Password:</label>
 
-    <asp:TextBox ID="txtboxpassword" runat="server" CssClass="inputbox" onfocus="clearTextBox(this)">Enter your Password</asp:TextBox>
+ <asp:TextBox ID="txtboxpassword" runat="server" CssClass="inputbox" onfocus="clearTextBox(this)"></asp:TextBox>
 
-    <script type="text/javascript">
-        function clearTextBox(textBox) {
-            if (textBox.value === textBox.defaultValue) {
-                textBox.value = '';
+<asp:Button ID="Button1" runat="server" Text="Log In" CssClass="bttn" OnClientClick="return submitForm();" />
+
+        <script type="text/javascript">
+            function clearTextBox(textBox) {
+                if (textBox.value === textBox.defaultValue) {
+                    textBox.value = '';
+                }
             }
-        }
-    </script>
 
-    
-    <div id="error-message" style="color: red; margin-bottom: 10px;"></div>
-    <asp:Button ID="Button1" runat="server" Text="Log In" CssClass="bttn" OnClick="Button1_Click" />
-</div>
-       <script type="text/javascript">
-            document.getElementById("loginButton").addEventListener("click", function () {
-        var username = document.getElementById("username").value;
-        var password = document.getElementById("password").value;
-        var errorMessage = document.getElementById("error-message");
+            function submitForm() {
+                var username = document.getElementById('<%= txtUsername.ClientID %>').value;
+        var password = document.getElementById('<%= txtboxpassword.ClientID %>').value;
 
-        // Basic form validation
-        if (username === "" || password === "") {
-            errorMessage.textContent = "Invalid username or password. Please try again!";
-        } else {
-            // Clear any previous error messages
-            errorMessage.textContent = "";
+                // Basic validation: Check if username and password are not empty
+                if (username.trim() === '' || password.trim() === '') {
+                    alert('Username and password are required.');
+                    return false; // Prevent form submission
+                }
 
-            // Display a confirmation dialog
-            var confirmLogin = confirm('Are you sure you want to log in?');
+                // Additional validation logic can be added here if needed
 
-            if (confirmLogin) {
-                // User clicked "YES", proceed with login logic here
-                // For example, submit the form or perform AJAX request
-                alert('Logging in...'); // Display a message indicating logging in
-                window.location.href = 'WelcomePage.aspx';
-            } else {
-                // User clicked "NO", do nothing or provide feedback to the user
-                alert('Login canceled.'); // Display a message indicating login was canceled
+                // Redirect to the home page
+                window.location.href = 'LHome.aspx';
+                return false;
             }
-        }
-    });
-</script>
+        </script>
+
+</div>  
     </form>
 </body>
 </html>

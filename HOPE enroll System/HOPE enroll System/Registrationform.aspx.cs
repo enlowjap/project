@@ -16,7 +16,7 @@ namespace HOPE_enroll_System
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("DashHome.aspx");
+            Response.Redirect("DashHOme.aspx");
         }
     }
 }
