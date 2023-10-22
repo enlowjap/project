@@ -6,6 +6,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+   
     <style type="text/css">
         body{
             margin:0;
@@ -56,7 +57,7 @@
     border-radius: 5px;
 }
 
-            .login-form button {
+            .bttn {
     width: 100%;
     padding: 10px;
     background: #4caf50;
@@ -70,7 +71,7 @@
              margin-bottom: 10px;
              font-weight: bold;
 }
-            .login-form button:hover {
+            .bttn:hover {
             background: #45a049;
 }
 
@@ -85,16 +86,38 @@
         <h2>Login Here</h2>
         <p>Thanks for signing up! Your account has been created.</p>
     </div>
-      <div class="login-form">
+    <div class="login-form">
     <label for="username">Username:</label>
-    <input type="text" id="username" placeholder="Enter your username" />
+
+       <asp:TextBox ID="txtUsername" runat="server" CssClass="inputbox" onfocus="clearTextBox(this)">Enter your Username</asp:TextBox>
+
+    <script type="text/javascript">
+        function clearTextBox(textBox) {
+            if (textBox.value === textBox.defaultValue) {
+                textBox.value = '';
+            }
+        }
+    </script>
+
+    
     <label for="password">Password:</label>
-    <input type="password" id="password" placeholder="Enter your password" />
+
+    <asp:TextBox ID="txtboxpassword" runat="server" CssClass="inputbox" onfocus="clearTextBox(this)">Enter your Password</asp:TextBox>
+
+    <script type="text/javascript">
+        function clearTextBox(textBox) {
+            if (textBox.value === textBox.defaultValue) {
+                textBox.value = '';
+            }
+        }
+    </script>
+
+    
     <div id="error-message" style="color: red; margin-bottom: 10px;"></div>
-    <button type="button" id="loginButton">Log in</button>
+    <asp:Button ID="Button1" runat="server" Text="Log In" CssClass="bttn" OnClick="Button1_Click" />
 </div>
-<script type="text/javascript">
-    document.getElementById("loginButton").addEventListener("click", function () {
+       <script type="text/javascript">
+            document.getElementById("loginButton").addEventListener("click", function () {
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
         var errorMessage = document.getElementById("error-message");
