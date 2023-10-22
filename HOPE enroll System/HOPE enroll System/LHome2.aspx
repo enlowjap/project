@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LHome.aspx.cs" Inherits="HOPE_enroll_System.LHome" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LHome2.aspx.cs" Inherits="HOPE_enroll_System.LHome" %>
 <%@ Register Src="~/homeheader.ascx" TagName="Header" TagPrefix="uc" %>
 <!DOCTYPE html>
 
@@ -115,50 +115,8 @@
            .vid-stat:hover{
                background-color: #00439D;
            }
-            .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.4);
-        }
 
-        .modal-content {
-            background-color: #fefefe;
-            margin: 15% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-        }
-
-        .modal-message {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-
-        #okButton {
-            margin-top: 20px;
-            padding: 12px 24px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        #okButton:hover {
-            background-color: #0056b3;
-        }
 </style>
-
 </head>
 <body>
 
@@ -179,31 +137,8 @@
     <div class="square pink"><h1>Senior Highschool</h1>Grade 11 to Grade 12 (HUMSS And STEM)<br /><br /><br /><asp:HyperLink ID="HyperLink5" runat="server" CssClass="vid-stat" NavigateUrl="~/Registrationform.aspx">REGISTER NOW!</asp:HyperLink></div>
     <div class="square brown"><h1>Home <br />Schooling</h1>All Grade Levels<br /><br /><br /><br /><asp:HyperLink ID="HyperLink6" runat="server" CssClass="vid-stat" NavigateUrl="~/Registrationform.aspx">REGISTER NOW!</asp:HyperLink></div>
 </div></div>
-         <div class="modal" id="myModal">
-        <div class="modal-content">
-            <p>Choose a grade level you want to enroll</p>
-            <button id="okButton">OK</button>
-        </div>
-    </div>
   
+    
     </form>
-    <script type="text/javascript">
-        // Get the modal
-        var modal = document.getElementById("myModal");
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("okButton");
-
-        // When the user clicks the button, open the modal 
-        btn.onclick = function () {
-            modal.style.display = "nonea";
-        };
-
-        // Display the modal when the page loads
-        window.onload = function () {
-            modal.style.display = "block";
-        };
-    </script>
-   
 </body>
 </html>

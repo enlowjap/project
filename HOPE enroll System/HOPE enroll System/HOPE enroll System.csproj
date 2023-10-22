@@ -149,6 +149,7 @@
     <Content Include="Images\verificationpic.png" />
     <Content Include="Images\welcomepic.png" />
     <Content Include="Landingpg.aspx" />
+    <Content Include="LHome2.aspx" />
     <Content Include="LHome.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="mainloginpg.aspx" />
@@ -306,6 +307,13 @@
     </Compile>
     <Compile Include="Landingpg.aspx.designer.cs">
       <DependentUpon>Landingpg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LHome2.aspx.cs">
+      <DependentUpon>LHome2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LHome2.aspx.designer.cs">
+      <DependentUpon>LHome2.aspx</DependentUpon>
     </Compile>
     <Compile Include="LHome.aspx.cs">
       <DependentUpon>LHome.aspx</DependentUpon>

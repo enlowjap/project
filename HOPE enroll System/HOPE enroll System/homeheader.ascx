@@ -24,7 +24,7 @@
 
             /* Style the logo */
             .logo img {
-                width: 300px; /* Set the width of the logo image */
+                width: 200px; /* Set the width of the logo image */
               
         }
 
@@ -76,8 +76,8 @@
             img{
                 vertical-align:top;
                 padding-left:10px;
-                height:30px;
-                width:30px;
+                height:40px;
+                width:40px;
                 border-radius:50%;
                 object-fit:fill;
              }
