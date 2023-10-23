@@ -142,14 +142,14 @@
           <div class="form-group">
     
    <asp:Button ID="Button1" runat="server" Text="Submit" CssClass="bttn" OnClientClick="return submitForm();" />
-    <asp:Label ID="errorLabel" runat="server" ></asp:Label>
-              
-<script type="text/javascript">
-    function submitForm() {
-        window.location.href = 'Verification.aspx'; 
-        return true;
-    }
-</script>
+    <script type="text/javascript">
+        function submitForm() {
+            window.location.href = 'Verification.aspx';
+            return false;
+        }
+    </script>
+              <asp:Label ID="errorLabel" runat="server"></asp:Label>
+
 </div>
  </div>
     </form>

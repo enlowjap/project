@@ -10,13 +10,10 @@ namespace HOPE_enroll_System
     public partial class Academics : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-            // Check if it's a postback triggered by the "Next" button click
-            if (IsPostBack && Request["__EVENTTARGET"] == "btnNext")
-            {
-                // Redirect to the desired page
-                Response.Redirect("NextPage.aspx");
-            }
-        }
+{
+   
+    }
+}
+
     }
 }

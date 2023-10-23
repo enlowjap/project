@@ -4,8 +4,6 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
       <style type="text/css">
   body{
@@ -127,7 +125,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <uc:Header runat="server" ID="Header1" />
+        <uc:Header runat="server" ID="Header" />
             <p>Academics</p><br />
          <p2>Explore our Educational Program!</p2>
         <div class="container">
