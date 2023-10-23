@@ -132,15 +132,15 @@
                 </tr>
                 <tr>
                     <td>Address:</td>
-                    <td><asp:TextBox ID="txtConfirmPassword" runat="server" TextMode="Password"></asp:TextBox></td>
+                    <td><asp:TextBox ID="txtConfirmPassword" runat="server"></asp:TextBox></td>
                     <td>Email Address:</td>
-                    <td><asp:TextBox ID="TextBox9" runat="server" TextMode="Password"></asp:TextBox></td>
+                    <td><asp:TextBox ID="TextBox9" runat="server"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>Telephone No.:</td>
-                    <td><asp:TextBox ID="TextBox10" runat="server" TextMode="Password"></asp:TextBox></td>
+                    <td><asp:TextBox ID="TextBox10" runat="server"></asp:TextBox></td>
                     <td>Mobile No.:</td>
-                    <td><asp:TextBox ID="TextBox11" runat="server" TextMode="Password"></asp:TextBox></td>
+                    <td><asp:TextBox ID="TextBox11" runat="server"></asp:TextBox></td>
                 </tr>
             </table>
             <asp:Button ID="Button1" runat="server" Text="Submit" CssClass="submitbttn" OnClick="Button1_Click" />

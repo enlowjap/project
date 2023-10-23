@@ -9,7 +9,7 @@
      <style>
         body {
             font-family: Arial, sans-serif;
-            background:url('Images/picdhome.png');
+            background:url('Images/red.png');
             background-size:cover;
         }
 
@@ -43,34 +43,56 @@
             background-color: #F8DFE0;
             color:darkred;
         }
-
-        
-.verification-container { 
-    padding: 40px;
-    border-radius: 10px;
-    text-align: justify;
-    margin-top:-656px;
-    margin-left:1px;
+.styled-table {
+    width: 76%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+    margin-top:-583px;
+    margin-left:215px;
+background-color: white;
 }
 
-h1 {
-    font-size: 70px;
-    color: black;
-    margin-bottom: 20px;
-     margin-left:230px;
-    
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd; /* Add borders to cells */
 }
 
+.styled-table th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd; /* Add borders to header cells */
+}
 
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.approved {
+    color: green;
+}
 
-p {
+.pending {
+    color: orange;
+}
+
+.rejected {
+    color: red;
+}
+
+.action-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     font-size: 16px;
-    color: #666;
-    padding-top: -8px;
-    margin-bottom: 40px;
-    margin-left:239px;
-     
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
 }
+
 
     </style>
 </head>
@@ -84,9 +106,44 @@ p {
                 <a href="/Dashprofile.aspx"><i class="fas fa-user"></i> Student Profile</a>
                 <a href="/Dashreciept"><i class="fas fa-receipt"></i> School Receipt</a>
             </div>
-               
+              
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Reference No.</th>
+                <th>Details</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Details for Reference No. 001</td>
+                <td class="approved">Approved</td>
+                <td><button class="action-button">View</button></td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Details for Reference No. 002</td>
+                <td class="pending">Pending</td>
+                <td><button class="action-button">View</button></td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Details for Reference No. 003</td>
+                <td class="rejected">Rejected</td>
+                <td><button class="action-button">View</button></td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>Details for Reference No. 004</td>
+                <td class="approved">Approved</td>
+                <td><button class="action-button">View</button></td>
+            </tr>
+        </tbody>
+    </table>
 </div>
-
           
 
     </form>
