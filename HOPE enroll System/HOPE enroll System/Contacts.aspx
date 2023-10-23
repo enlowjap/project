@@ -76,8 +76,7 @@
 
 <body>
     <form id="form1" runat="server">
-        <div><uc:Header runat="server" ID="Header1" /></div>
-        
+        <div><uc:Header runat="server" ID="Header1" />
          <div class="container">
              <div class="cont">
              <div>
@@ -99,7 +98,7 @@
             <i class="icon fas fa-envelope"></i><span class="label">Email</span><br /><p class="info">info@hopeintegratedschool.edu.ph</p>
         </div>
     </div>
-    
+       </div>
     </form>
 </body>
 </html>
