@@ -137,7 +137,7 @@
     <div class="arrow-buttons">
    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/About.aspx" CssClass="prev-button">
  &lt; Back </asp:HyperLink> 
-   <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/AcademicsPage2.aspx" CssClass="next-button">
+   <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Acad2.aspx" CssClass="next-button">
     Next &gt; </asp:HyperLink>
 </div>
  

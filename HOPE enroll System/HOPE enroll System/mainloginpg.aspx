@@ -9,7 +9,7 @@
     <style type="text/css">
         body {
             background:url('Images/LogInpic.png');
-            background-size: cover;        
+            background-size: 1225px;        
         }
          h1 {
           font-family: 'Segoe UI';
@@ -29,7 +29,7 @@
 
         }
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -38,7 +38,7 @@
         }
 
         .form-group-name {
-            margin-bottom: 20px;
+            margin-bottom: 18px;
             display: column;
             flex-direction: row;
             justify-content: center;

@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AcademicsPage2.aspx.cs" Inherits="HOPE_enroll_System.Contacts" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Acad2.aspx.cs" Inherits="HOPE_enroll_System.Contacts" %>
 <%@ Register Src="~/headerlandpage.ascx" TagName="Header" TagPrefix="uc" %>
 <!DOCTYPE html>
 
@@ -132,3 +132,4 @@
     </form>
 </body>
 </html>
+

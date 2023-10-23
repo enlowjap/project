@@ -11,7 +11,7 @@ namespace HOPE_enroll_System
 {
 
 
-    public partial class Verification
+    public partial class Contacts
     {
 
         /// <summary>

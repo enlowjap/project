@@ -102,7 +102,7 @@ p {
 
 <script type="text/javascript">
     function submitForm() {
-        window.location.href = 'VerificationPage2.aspx';
+        window.location.href = 'Veri2.aspx';
         return false;
     }
 </script>

@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="VerificationPage2.aspx.cs" Inherits="HOPE_enroll_System.Verification" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Veri2.aspx.cs" Inherits="HOPE_enroll_System.Contacts" %>
 <%@ Register Src="~/headerlandpage.ascx" TagName="Header" TagPrefix="uc" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <title></title>
     <style>
         body{
