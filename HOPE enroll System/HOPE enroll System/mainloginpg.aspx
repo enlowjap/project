@@ -4,6 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <title>Create Account</title>
     
     <style type="text/css">
